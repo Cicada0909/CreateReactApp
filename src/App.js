@@ -1,5 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import {Component} from 'react';
+
+class Field extends Component {
+  render() {
+    const holder = 'Enter here';
+    const styleField = {
+      width: '300px'
+    };
+
+    return <input
+            placeholder={holder}
+            type='text'
+            style={styleField}/>
+  };
+}
 
 function App() {
   return (
@@ -22,4 +37,5 @@ function App() {
   );
 }
 
+export {Field}
 export default App;
